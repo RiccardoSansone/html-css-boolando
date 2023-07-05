@@ -3,3 +3,145 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --bl-header-bg: #ff6900;
+    --bl-gray: #e8e2dd;
+    --bl-red: #ff0000;
+    --bl-green: #008000;
+    --bl-white: #fdfefe;
+}
+
+/* #region header */
+
+.testa{
+    width: 100%;
+    background-color: var(--bl-header-bg);
+    height: 50px;
+    box-shadow: 0 1px 3px 0 gray;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav{
+    margin:auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content:space-between;
+}
+
+.genere, .logo, .simboli {
+    color: var(--bl-gray);
+    padding: 1rem 0;
+}
+
+.simboli, .genere{
+    font-size: small;
+    font-weight:400;
+}
+
+.simboli{
+    justify-items: flex-end;
+}
+
+.logo{
+    align-items: center;
+}
+
+.genere > a{
+    text-decoration: none;
+    color: var(--bl-gray);
+}
+/* #endregion header */
+
+/* #region main */
+
+.body{
+    padding: 8% 10%;
+}
+
+.card-container{
+    width: 100%;
+    height: 100px;
+}
+
+.row-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+}
+
+.col{
+    width: 32%;
+}
+
+.card{
+    position: relative;
+}
+
+.card-normal{
+    width: 100%;
+}
+.card-hover{
+    width: 100%;
+    display: none;
+}
+
+.card:hover .card-hover{
+    display: block;
+}
+
+.card:hover .card-normal{
+    display: none;
+}
+
+.red{
+    color: var(--bl-red);
+    font-size: 0.8rem;
+}
+
+.cut{
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+
+h5{
+    color: gray;
+    font-weight: lighter;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+
+.tag{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+}
+
+.sale{
+    background-color: var(--bl-red);
+    color: white;
+    padding: 0.2rem 0.4rem;
+}
+
+.sost{
+    background-color: var(--bl-green);
+    color: white;
+    padding: 0.2rem 0.4rem;
+}
+
+.favorite{
+    position: absolute;
+    top: 2%;
+    right: 0;
+    background-color: white;
+    padding: 0.6rem 0.6rem;
+}
+
+.favorite:hover{
+    color: var(--bl-red)
+}
