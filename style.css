@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 :root{
@@ -60,11 +62,11 @@
 
 .body{
     padding: 8% 10%;
+    height: auto;
 }
 
 .card-container{
     width: 100%;
-    height: 100px;
 }
 
 .row-container{
@@ -144,4 +146,30 @@ h4{
 
 .favorite:hover{
     color: var(--bl-red)
+}
+
+.coda{
+    width: 100%;
+    background-color: black;
+}
+
+.foot{
+    margin:auto;
+    width: 80%;
+    padding: 1rem 0;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.info{
+    color: var(--bl-white);
+    font-size: small;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
